@@ -1,0 +1,72 @@
+
+.stat {
+    color: rgb(255, 80, 49);
+    background: -webkit-linear-gradient(#eee, rgb(110, 110, 110));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    float: left;
+    width: auto;
+    margin-right: 20px;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.txt {
+    color: white;
+    float: left;
+    font-size: 25px;
+    font-weight: 500;
+    font-family: 'Rajdhani', sans-serif;
+    margin-right: 10px;
+    margin-top: 9px;
+}
+
+#flag {
+    margin-top: 8px;
+    margin-left: -10px;
+    width: 40px;
+    height: auto;
+    float: left;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+#bg {
+    border-width: 3px;
+    border-color: rgb(255, 255, 255);
+    border-style: ridge;
+    padding: 8px;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-size: auto;
+    width: fit-content;
+    height: 46px;
+    float: right;
+}
+
+#ranktxt {
+    margin-left: 15px;
+}
+
+#song {
+    margin-top: 15px;
+    color: rgb(255, 255, 255);
+    float: right;
+    font-size: 25px;
+    font-weight: 500;
+    font-family: 'Rajdhani', sans-serif;
+    margin-right: 10px;
+}
+
+#bs {
+    color: rgb(255, 80, 49);
+    background: -webkit-linear-gradient(#eee, rgb(97, 97, 97));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    float: right;
+    width: auto;
+    margin-right: 20px;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'Rajdhani', sans-serif;
+}
