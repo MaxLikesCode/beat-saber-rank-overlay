@@ -1,7 +1,7 @@
 
 .stat {
     color: rgb(255, 80, 49);
-    background: -webkit-linear-gradient(#eee, rgb(110, 110, 110));
+    background: -webkit-linear-gradient(#1382E9, #0EBFF5);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     float: left;
@@ -9,7 +9,18 @@
     margin-right: 20px;
     font-size: 40px;
     font-weight: 700;
-    font-family: 'Rajdhani', sans-serif;
+    font-family: 'Londrina Solid', cursive;
+}
+
+#redsaber {
+    float: left;
+    height: 40px;
+    width: auto;
+}
+
+#bluesaber {
+    height: 40px;
+    width: auto;
 }
 
 .txt {
@@ -17,7 +28,7 @@
     float: left;
     font-size: 25px;
     font-weight: 500;
-    font-family: 'Rajdhani', sans-serif;
+    font-family: 'Londrina Solid', cursive;
     margin-right: 10px;
     margin-top: 9px;
 }
@@ -25,7 +36,7 @@
 #flag {
     margin-top: 8px;
     margin-left: -10px;
-    width: 40px;
+    width: 30px;
     height: auto;
     float: left;
     vertical-align: middle;
@@ -35,7 +46,7 @@
 #bg {
     border-width: 3px;
     border-color: rgb(255, 255, 255);
-    border-style: ridge;
+    /*border-style: ridge;*/
     padding: 8px;
     background-color: rgba(0, 0, 0, 0.8);
     background-size: auto;
