@@ -13,7 +13,7 @@
 
 Example URL:
 
-https://maxlikescode.github.io/beat-saber-rank-overlay/?user-id=76561198072994038&bgcolor=252630cc&statscolor=e8c020&sabers=0&textcolor=ffffff&country=de
+https://maxlikescode.github.io/beat-saber-rank-overlay/?user-id=76561198072994038&bgcolor=252630cc&statscolor=e8c020&textcolor=ffffff&country=de
 
 ---
 
