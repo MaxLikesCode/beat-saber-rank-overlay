@@ -6,11 +6,6 @@ document.addEventListener("DOMContentLoaded", () => {
 	let statscolor = params.get("statscolor");
 	let sabers = params.get("sabers");
 	let country = params.get("country");
-	// function minmax(value, min, max) {
-	// 	if (parseFloat(value) < min || isNaN(value)) return 0;
-	// 	else if (parseFloat(value) > max) return 100;
-	// 	else return value;
-	// }
 
 	const background = document.getElementById("bg");
 	if (bgcolor != undefined) {
