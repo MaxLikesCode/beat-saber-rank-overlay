@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	let user_id = params.get("user-id");
 	let bgcolor = params.get("bgcolor");
 	let textcolor = params.get("textcolor");
-	let color = params.get("color");
+	let statscolor = params.get("statscolor");
 	let sabers = params.get("sabers");
 	let country = params.get("country");
 	// function minmax(value, min, max) {
@@ -18,9 +18,9 @@ document.addEventListener("DOMContentLoaded", () => {
 	}
 
 	const stats = document.getElementsByClassName("stat");
-	if (color != undefined) {
+	if (statscolor != undefined) {
 		Array.from(stats).forEach((stat) => {
-			stat.style.color = "#" + color;
+			stat.style.color = "#" + statscolor;
 		});
 	}
 
