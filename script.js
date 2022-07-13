@@ -1,28 +1,63 @@
 document.addEventListener("DOMContentLoaded", () => {
 	let params = new URL(document.location).searchParams;
 	let user_id = params.get("user-id");
-	let opacity = params.get("opacity");
+	let bgcolor = params.get("bgcolor");
+	let textcolor = params.get("textcolor");
 	let color = params.get("color");
-
-	function minmax(value, min, max) {
-		if (parseFloat(value) < min || isNaN(value)) return 0;
-		else if (parseFloat(value) > max) return 100;
-		else return value;
-	}
+	let sabers = params.get("sabers");
+	let country = params.get("country");
+	// function minmax(value, min, max) {
+	// 	if (parseFloat(value) < min || isNaN(value)) return 0;
+	// 	else if (parseFloat(value) > max) return 100;
+	// 	else return value;
+	// }
 
 	const background = document.getElementById("bg");
-	if (opacity != undefined) {
-		background.style.backgroundColor =
-			"rgba(0, 0, 0, " + minmax(opacity, 0, 1) + ")";
+	if (bgcolor != undefined) {
+		background.style.backgroundColor = "#" + bgcolor;
 	}
 
 	const stats = document.getElementsByClassName("stat");
 	if (color != undefined) {
-		console.log(color);
 		Array.from(stats).forEach((stat) => {
 			stat.style.color = "#" + color;
 		});
 	}
+
+	const sabers_images = document.getElementsByClassName("sabers");
+	if (sabers != undefined) {
+		if (sabers == 0) {
+			Array.from(sabers_images).forEach((saber) => {
+				saber.style.display = "none";
+			});
+		}
+	}
+
+	const txt = document.getElementsByClassName("txt");
+	if (textcolor != undefined) {
+		Array.from(txt).forEach((text_element) => {
+			text_element.style.color = "#" + textcolor;
+		});
+	}
+
+	const country_flag = document.getElementById("country-flag");
+	async function fetch_flag() {
+		if (country != undefined) {
+			try {
+				const response = await fetch(
+					"https://flagcdn.com/256x192/" + country + ".png"
+				);
+				if (!response.ok) {
+					console.log(response);
+					throw new Error(`Error! status: ${response.status}`);
+				}
+				country_flag.src = response.url;
+			} catch (err) {
+				country_flag.style.display = "none";
+			}
+		}
+	}
+	fetch_flag();
 
 	function parseStats() {
 		$.ajax({
@@ -35,7 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
 					$("div#rank").html("#" + value.rank);
 				});
 				$(user.playerInfo).each(function (index, value) {
-					$("div#countryRank").html("#" + value.countryRank);
+					$("div#country-rank").html("#" + value.countryRank);
 				});
 				$(user.playerInfo).each(function (index, value) {
 					var num = value.pp;
@@ -44,7 +79,7 @@ document.addEventListener("DOMContentLoaded", () => {
 				});
 			},
 			error: function () {
-				background.style.visibility = "Hidden";
+				background.style.display = "none";
 				document.body.innerHTML = "";
 				const error = document.createElement("h1");
 				error.innerText = "Wrong User ID";

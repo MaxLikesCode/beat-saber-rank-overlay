@@ -1,9 +1,5 @@
 .stat {
-	/* background: -webkit-linear-gradient(#1382e9, #0ebff5); */
-	/* -webkit-background-clip: text; */
-	/* background-clip: text; */
-	/* -webkit-text-fill-color: transparent; */
-	color: rgb(234, 112, 82);
+	color: #ea7052;
 	float: left;
 	width: auto;
 	margin-right: 20px;
@@ -14,25 +10,29 @@
 
 .txt {
 	color: white;
-	mix-blend-mode: difference;
 	float: left;
 	font-size: 25px;
 	font-weight: 500;
 	font-family: "Londrina Solid", cursive;
 	margin-right: 10px;
-	margin-top: 9px;
 }
 
 #bg {
 	border-radius: 10px;
-	padding: 8px;
+	padding: 0.4em;
+	display: flex;
 	background-color: rgb(0, 0, 0);
 	width: -moz-fit-content;
 	width: fit-content;
-	height: auto;
-	float: right;
+	flex-wrap: nowrap;
+	align-items: center;
 }
 
 #ranktxt {
 	margin-left: 15px;
+}
+
+#country-flag {
+	width: 50px;
+	margin-right: 20px;
 }
