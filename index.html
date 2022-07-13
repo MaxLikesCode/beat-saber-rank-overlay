@@ -1,61 +1,30 @@
 <!DOCTYPE html>
 <head>
-    <script
-    src="https://code.jquery.com/jquery-3.5.1.js"
-    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-    crossorigin="anonymous"></script>
-    <script src="script.js"></script>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300&display=swap" rel="stylesheet">
+	<script
+		src="https://code.jquery.com/jquery-3.5.1.js"
+		integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+		crossorigin="anonymous"
+	></script>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<script src="script.js"></script>
+	<title>Beat Saber Rank Overlay</title>
+	<link rel="stylesheet" type="text/css" href="styles.css" />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300&display=swap"
+		rel="stylesheet"
+	/>
+	<script src="script.js"></script>
 </head>
-<html>
-<body>
-    <script>
-    function parseStats() {
-        console.log("beginning parsing")
-            $.ajax({
-                url: "https://new.scoresaber.com/api/player/76561198213420724/full",
-                dataType: "json",
-                type: "GET",
-                cache: false,
-                success: function(data) {
-                    console.log("success")
-                    $(data.playerInfo).each(function(index, value) {
-                        $("div#rank").html("#" + value.rank);
-                        console.log(value.rank)
-                    });
-                    $(data.playerInfo).each(function(index, value) {
-                        $("div#countryRank").html("#" + value.countryRank);
-                        console.log(value.countryRank)
-                    });
-                    $(data.playerInfo).each(function(index, value) {
-                        var num = value.pp;
-                        var n = num.toFixed(2);
-                        $("div#pp").html(n);
-                        console.log(value.pp)
-                    });
-                },
-                error: function (xhr) {
-                    console.log(xhr.status);
-                }
-            })
-    }
-    parseStats()
-    window.setInterval(function(){
-        parseStats()
-    }, 60000);
-    </script>
-
-<div id="bg">
-    <div class="txt" id="ranktxt">Rank:</div>
-    <div id="rank" class="stat"></div>
-    <div class="txt">US:</div>
-    <div id="countryRank"class="stat"></div>
-    <img src="usaflag.svg" id="flag">
-    <div class="txt">PP:</div>
-    <div id="pp"class="stat"></div>
-</div>
-<div id="bs"></div><div id="song">Song request instructions in my info</div>
-
-</body>
+<html lang="en">
+	<body>
+		<div id="bg">
+			<div class="txt" id="ranktxt">Rank:</div>
+			<div id="rank" class="stat"></div>
+			<div class="txt">Country:</div>
+			<div id="countryRank" class="stat"></div>
+			<div class="txt">PP:</div>
+			<div id="pp" class="stat"></div>
+		</div>
+	</body>
 </html>

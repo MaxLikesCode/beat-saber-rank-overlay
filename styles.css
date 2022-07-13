@@ -1,83 +1,38 @@
-
 .stat {
-    color: rgb(255, 80, 49);
-    background: -webkit-linear-gradient(#1382E9, #0EBFF5);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    float: left;
-    width: auto;
-    margin-right: 20px;
-    font-size: 40px;
-    font-weight: 700;
-    font-family: 'Londrina Solid', cursive;
-}
-
-#redsaber {
-    float: left;
-    height: 40px;
-    width: auto;
-}
-
-#bluesaber {
-    height: 40px;
-    width: auto;
+	/* background: -webkit-linear-gradient(#1382e9, #0ebff5); */
+	/* -webkit-background-clip: text; */
+	/* background-clip: text; */
+	/* -webkit-text-fill-color: transparent; */
+	color: rgb(234, 112, 82);
+	float: left;
+	width: auto;
+	margin-right: 20px;
+	font-size: 40px;
+	font-weight: 700;
+	font-family: "Londrina Solid", cursive;
 }
 
 .txt {
-    color: white;
-    float: left;
-    font-size: 25px;
-    font-weight: 500;
-    font-family: 'Londrina Solid', cursive;
-    margin-right: 10px;
-    margin-top: 9px;
-}
-
-#flag {
-    margin-top: 8px;
-    margin-left: -10px;
-    width: 30px;
-    height: auto;
-    float: left;
-    vertical-align: middle;
-    margin-right: 10px;
+	color: white;
+	mix-blend-mode: difference;
+	float: left;
+	font-size: 25px;
+	font-weight: 500;
+	font-family: "Londrina Solid", cursive;
+	margin-right: 10px;
+	margin-top: 9px;
 }
 
 #bg {
-    border-width: 3px;
-    border-color: rgb(255, 255, 255);
-    /*border-style: ridge;*/
-    padding: 8px;
-    background-color: rgba(0, 0, 0, 0.8);
-    background-size: auto;
-    width: fit-content;
-    height: 46px;
-    float: right;
+	border-radius: 10px;
+	padding: 8px;
+	background-color: rgb(0, 0, 0);
+	width: -moz-fit-content;
+	width: fit-content;
+	height: auto;
+	float: right;
 }
 
 #ranktxt {
-    margin-left: 15px;
-}
-
-#song {
-    margin-top: 15px;
-    color: rgb(255, 255, 255);
-    float: right;
-    font-size: 25px;
-    font-weight: 500;
-    font-family: 'Rajdhani', sans-serif;
-    margin-right: 10px;
-}
-
-#bs {
-    color: rgb(255, 80, 49);
-    background: -webkit-linear-gradient(#eee, rgb(97, 97, 97));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    float: right;
-    width: auto;
-    margin-right: 20px;
-    font-size: 40px;
-    font-weight: 700;
-    font-family: 'Rajdhani', sans-serif;
+	margin-left: 15px;
 }
