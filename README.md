@@ -21,19 +21,19 @@ https://maxlikescode.github.io/beat-saber-rank-overlay/?user-id=7656119807299403
 
 ### 1. Click the **+** button in the sources panel
 
-![obs1](obs-1.png)
+![obs1](images/obs-1.png)
 
 ### 2. Select **Browser**
 
-![obs2](obs-2.png)
+![obs2](images/obs-2.png)
 
 ### 3. Input your URL and play with the size settings
 
-![obs3](obs-3.png)
+![obs3](images/obs-3.png)
 
 ### To refresh your overlay, press "Refresh Cache of current page"
 
-![obsrefreshcache](obs-refresh-cache.png)
+![obsrefreshcache](images/obs-refresh-cache.png)
 
 ---
 
@@ -43,7 +43,7 @@ https://maxlikescode.github.io/beat-saber-rank-overlay/?user-id=7656119807299403
 
 **A:** You can find it in the url when you visit your profile in Scoresaber
 
-![useridimage](scoresaber-user-id.png)
+![useridimage](images/scoresaber-user-id.png)
 
 ---
 
@@ -51,7 +51,7 @@ https://maxlikescode.github.io/beat-saber-rank-overlay/?user-id=7656119807299403
 
 **A:** Head to https://fffuel.co/cccolor/, select your color and copy the following hex code:
 
-![colorpickerimage](color-picker.png)
+![colorpickerimage](images/color-picker.png)
 
 ---
 
@@ -77,4 +77,4 @@ https://maxlikescode.github.io/beat-saber-rank-overlay/?user-id=7656119807299403
 
 **A:** Make sure you add a **?** before entering your parameters
 
-![questionmark](question-mark.png)
+![questionmark](images/question-mark.png)
