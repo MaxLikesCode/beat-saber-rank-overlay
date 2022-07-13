@@ -1,8 +1,19 @@
+ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
 .stat {
 	color: #ea7052;
 	float: left;
 	width: auto;
-	margin-right: 20px;
 	font-size: 40px;
 	font-weight: 700;
 	font-family: "Londrina Solid", cursive;
@@ -14,13 +25,13 @@
 	font-size: 25px;
 	font-weight: 500;
 	font-family: "Londrina Solid", cursive;
-	margin-right: 10px;
 }
 
 #bg {
 	border-radius: 10px;
-	padding: 0.4em;
+	padding: 0.4em 1.2em;
 	display: flex;
+	gap: 20px;
 	background-color: rgb(0, 0, 0);
 	width: -moz-fit-content;
 	width: fit-content;
@@ -28,11 +39,10 @@
 	align-items: center;
 }
 
-#ranktxt {
-	margin-left: 15px;
-}
-
 #country-flag {
 	width: 50px;
-	margin-right: 20px;
+}
+
+.blocks {
+	width: 40px;
 }

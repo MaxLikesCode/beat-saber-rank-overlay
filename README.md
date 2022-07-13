@@ -1,4 +1,6 @@
-# **Beat Saber Rank Overlay** | A rank overlay for your Beat Saber streams
+# **Beat Saber Rank Overlay** | A Beat Saber rank overlay for OBS
+
+![example](images/example.png)
 
 ## URL Parameters
 
@@ -9,11 +11,11 @@
 | `textcolor`  | Hex (alpha) color of the text                       | `textcolor=ffffff`          | `FFFFFF` |
 | `bgcolor`    | Hex (alpha) color of the background                 | `bgcolor=252630cc`          | `000000` |
 | `country`    | Displays your country's flag with your country code | `country=de`                | `None`   |
-| `sabers`     | Hide the sabers                                     | `sabers=0`                  | `1`      |
+| `blocks`     | Hide the blocks                                     | `blocks=0`                  | `1`      |
 
 Example URL:
 
-https://maxlikescode.github.io/beat-saber-rank-overlay/?user-id=76561198072994038&bgcolor=252630cc&statscolor=e8c020&textcolor=ffffff&country=de
+https://maxlikescode.github.io/beat-saber-rank-overlay/?user-id=76561198072994038&bgcolor=252630cc&statscolor=e8c020&textcolor=ffffff&country=de&blocks=1
 
 ---
 

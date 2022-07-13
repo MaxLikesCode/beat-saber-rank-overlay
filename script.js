@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	let bgcolor = params.get("bgcolor");
 	let textcolor = params.get("textcolor");
 	let statscolor = params.get("statscolor");
-	let sabers = params.get("sabers");
+	let blocks = params.get("blocks");
 	let country = params.get("country");
 
 	const background = document.getElementById("bg");
@@ -19,11 +19,12 @@ document.addEventListener("DOMContentLoaded", () => {
 		});
 	}
 
-	const sabers_images = document.getElementsByClassName("sabers");
-	if (sabers != undefined) {
-		if (sabers == 0) {
-			Array.from(sabers_images).forEach((saber) => {
-				saber.style.display = "none";
+	const blocks_images = document.getElementsByClassName("blocks");
+	const blocks_li = document.getElementsByClassName("blocks-li");
+	if (blocks != undefined) {
+		if (blocks == 0) {
+			Array.from(blocks_li).forEach((block) => {
+				block.remove();
 			});
 		}
 	}
