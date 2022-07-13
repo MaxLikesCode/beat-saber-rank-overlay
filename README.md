@@ -15,6 +15,28 @@ Example URL:
 
 https://maxlikescode.github.io/beat-saber-rank-overlay/?user-id=76561198072994038&bgcolor=252630cc&color=e8c020&sabers=0&textcolor=ffffff&country=de
 
+---
+
+## How to add it to OBS
+
+### 1. Click the **+** button in the sources panel
+
+![obs1](obs-1.png)
+
+### 2. Select **Browser**
+
+![obs2](obs-2.png)
+
+### 3. Input your URL and play with the size settings
+
+![obs3](obs-3.png)
+
+### To refresh your overlay, press "Refresh Cache of current page"
+
+![obsrefreshcache](obs-refresh-cache.png)
+
+---
+
 # **FAQ**
 
 **Q:** Where can I find my User ID?
@@ -48,3 +70,11 @@ https://maxlikescode.github.io/beat-saber-rank-overlay/?user-id=7656119807299403
 **Q:** Why isn't my flag showing up?
 
 **A:** You most likely used the wrong country code
+
+---
+
+**Q:** Why am I redirected to the GitHub 404 Page?
+
+**A:** Make sure you add a **?** before entering your parameters
+
+![questionmark](question-mark.png)
